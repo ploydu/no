@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
+body{
+    display: flex;
+    background-color: rgb(169, 217, 240);
+    color: white;
+}
+p {
+    font-size: 12px;
+}
+h3,h4 {
+    margin: 0;
+}
+.container {
+    margin: 40px;
+    padding: 25px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+    font-family: "Varela Roung",sans-serif;
+}
+.item {
+    --color: pink;
+    width: 200px;
+    background-color: var(--color);
+    border-radius: 10px;
+    padding: 7px 7px;
+    box-shadow: #3c40434d 0px 1px 2px 0px,
+                #3c40434d 0px 1px 3px 1px;
+    position: relative;
+    cursor: pointer;
+}
+.item::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color);
+    border-width: 40px 40px 40px 40px;
+    filter: drop-shadow(5px 0 4px #00000094);
+    transition: filter .5s;
+}
+.layer{
+    background-color: white;
+    border: 1px solid #fff;
+    border-radius: 1.5cap;
+    padding: 20px;
+    box-shadow: #00000012 0px 1px 2px,
+    #00000012 0px 2px 4px,
+    #00000012 0px 4px 8px,
+    #00000012 0px 8px 16px,
+    #00000012 0px 16px 32px,
+    #00000012 0px 32px 64px;
+    position: relative;
+    left: 7.5px;
+}
+i:hover {
+    transition: 3s;
+    color: black;
+}
